@@ -1,0 +1,82 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --blue-950: #0D2544;    
+  --spacing-small: 8px;
+  --spacing-medium: 12px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  border-radius: 9px;
+  border: 1px solid var(--blue-950);
+}
+
+.button-content {
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: var(--blue-950);
+  box-shadow: 0px 12px 12px 0px rgba(255, 255, 255, 0.08) inset, 0px -12px 9px 0px rgba(0, 0, 0, 0.20) inset;
+  overflow: hidden;
+}
+
+.button-content:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #0D2544;
+  box-shadow: 0px 12px 12px 0px rgba(255, 255, 255, 0.18) inset, 0px -12px 9px 0px rgba(0, 0, 0, 0.20) inset;
+  cursor: pointer;
+}
+
+.button-content:active {
+  background: var(--blue-950);
+  box-shadow: none;
+}
+
+.main-button {
+  color: var(--blue-50, #F1F7FE);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  padding: 10px var(--spacing-medium);
+}
+
+.main-button:hover {
+  background: rgba(0, 0, 0, 0.10);
+}
+
+.divider {
+  width: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  height: 100%;
+}
+
+.split-button {
+  display: flex;
+  align-items: center;
+  padding: 10px var(--spacing-small);
+}
+
+.split-button:hover {
+  background: rgba(0, 0, 0, 0.10);
+}
