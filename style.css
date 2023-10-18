@@ -1,4 +1,5 @@
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 
 html {
   height: 100%;
@@ -22,12 +23,34 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.content {
+  position: relative;
+}
+
+.counter {
+  display: flex;
+  padding: var(--spacing-medium);
+  background-color: var(--blue-50);
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  gap: var(--spacing-small)
+}
+
+.counter > span {
+  color: grey;
 }
 
 .button-container {
   display: flex;
   border-radius: 9px;
   border: 1px solid var(--blue-950);
+  flex: 0;
+  width: fit-content;
 }
 
 .button-content {
@@ -80,3 +103,42 @@ body {
 .split-button:hover {
   background: rgba(0, 0, 0, 0.10);
 }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid rgba(13, 37, 68, 0.05);
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(20, 79, 148, 0.12), 0px 4px 8px 0px rgba(20, 79, 148, 0.09);
+  width: 160px;
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+  top: 120%;
+  transform: scaleY(0) translateY(-50px);
+  transition: all .3s ease-out;
+  transform-origin: top;
+}
+
+.menu.show {
+  transform: scaleY(1) translateY(0px);
+}
+
+.option {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+
+.option:hover {
+  background: #FFF;
+  box-shadow: 0px -6px 10px 0px rgba(13, 37, 68, 0.05) inset, 0px 2px 10px 0px rgba(13, 37, 68, 0.05) inset;
+}
+
