@@ -140,5 +140,6 @@ body {
 .option:hover {
   background: #FFF;
   box-shadow: 0px -6px 10px 0px rgba(13, 37, 68, 0.05) inset, 0px 2px 10px 0px rgba(13, 37, 68, 0.05) inset;
+  cursor: pointer;
 }
 

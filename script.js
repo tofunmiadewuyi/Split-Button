@@ -5,7 +5,6 @@ const count = document.getElementById('count');
 
 splitBtn.addEventListener("click", () => {
   menuTray.classList.toggle("show");
-
 });
 
 mainBtn.addEventListener("click", () => {
@@ -13,3 +12,9 @@ mainBtn.addEventListener("click", () => {
     countVal++;
     count.innerHTML = countVal;
 });
+
+document.addEventListener("click", (e) => {
+  if (e.target != splitBtn) {
+    menuTray.classList.remove("show");
+  }
+})
