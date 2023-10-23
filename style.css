@@ -82,6 +82,7 @@ body {
   font-weight: 500;
   line-height: 20px; /* 125% */
   padding: 10px var(--spacing-medium);
+  user-select: none;
 }
 
 .main-button:hover {
@@ -98,6 +99,12 @@ body {
   display: flex;
   align-items: center;
   padding: 10px var(--spacing-small);
+  
+}
+
+#split-icon {
+  user-select: none;
+  pointer-events: none;
 }
 
 .split-button:hover {
